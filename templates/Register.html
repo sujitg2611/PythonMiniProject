@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+<title>Register</title>
+{% endblock %}
+
+{% block body %}
+
+<form action="/Register" method="POST">
+    <h3>Register Form:</h3>
+    <br>
+    <h4>Username:</h4>
+    <input type="text"name='log' id="log" placeholder="Username">
+    <br>
+    <h4>Password:</h4>
+    <input type="password" name='pass'id="pass" placeholder="Password">
+    <br>
+    <input type="submit" value="Register">
+</form>
+{% endblock %}
